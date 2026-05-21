@@ -3,7 +3,8 @@ http_response_code(200);
 header('Content-Type: application/json');
 
 $data = [
-    'status' => 200
+    "ClientVersion" => "0.7.14",
+    "Platform" => "STEAM"
 ];
 
 echo json_encode($data);

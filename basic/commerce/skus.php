@@ -1,12 +1,21 @@
 <?php
 http_response_code(200);
-header('Content-Type: application/json');
+header('Content-Type => application/json');
 
 $data = [
     'skus' => [
         'version' => 1,
         'created' => 1779194450868,
-        'definitions' => []
+        'definitions' => [
+            [
+                'name' => '',
+                'description' => '',
+                'realPrice' => 0,
+                'productIds' => [
+                    'additionalProp' => ''
+                ]
+            ]
+        ]
     ]
 ];
 

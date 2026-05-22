@@ -44,7 +44,12 @@ Make sure you have the following installed:
 
 ## Screenshots
 
-![Screenshot](Images/game.png)
+<details>
+  <summary>Click to view Screenshots</summary>
+  
+  ![Screenshot 1](/Images/image1.png)
+  ![Screenshot 2](/Images/image2.png)
+</details>
 
 ---
 

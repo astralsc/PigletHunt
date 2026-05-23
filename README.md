@@ -54,7 +54,7 @@ Make sure you have the following installed:
 ---
 
 ## Disclaimer
-**Orion Hunt** uses resources from the APIs of **Beamable/Disruptor Beam** and is not affiliated with **MiniToon**, **Shaggy Doge**, **Beamable/Disruptor Beam**.
+**Piglet Hunt** uses resources from the APIs of **Beamable/Disruptor Beam** and is not affiliated with **MiniToon**, **Shaggy Doge**, **Beamable/Disruptor Beam**.
 All rights to Piggy, Piggy: Intercity, and PIGGY: Hunt belong to their respective owners.
 
 If a takedown is requested by the original developers, this repository will be removed.

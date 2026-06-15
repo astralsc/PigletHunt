@@ -42,7 +42,7 @@ Make sure you have the following installed:
 
 * In your **PIGGY: Hunt** application folder, navigate to **piggy-hunt_Data** and open **resources.assets** in a hex editor (such as HxD). Replace **api.beamable.com** with your own URL. If your URL is shorter than the original, pad the remaining space with forward slashes (`/`). If the client does not connect and your web server is not using **HTTPS**, change your URL to use **http** instead of **https**.
 
-* Open the **Managed** folder located inside **piggy-hunt_Data** and open **PubNub.dll** in **dnSpy**. Press **Ctrl + Shift + K**, set the search type to **Strings**, and search for **pubsub.pubnub.com**. Double-click the result, then right-click the URL and select **Edit Class (C#)**. Replace it with your own URL, then click **Compile**. Finally, click **File** in the top-left corner and select **Save All** to save your changes.
+* Open the **Managed** folder located inside **piggy-hunt_Data** and open **PubNub.dll** in **dnSpy**. Press **Ctrl + Shift + K**, set the "Search For:" to **Number/String**, and search for **pubsub.pubnub.com**. Double-click the result, then right-click the URL and select **Edit Class (C#)**. Replace it with your own URL, then click **Compile**. Finally, click **File** in the top-left corner and select **Save All** to save your changes.
 
 * Finally, you can launch the exe and you should connect to our own PIGGY: Hunt server!
 

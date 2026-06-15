@@ -9,10 +9,10 @@ The first open-source private server for the abandoned Steam game PIGGY: Hunt
 
 Make sure you have the following installed:
 
-- UwAmp Wamp Server [(download here)](https://www.uwamp.com/file/UwAmp.exe)
-- HxD [(download here)](https://mh-nexus.de/en/hxd/)
-- dnSpy [(download here)](https://dnspy.org/)
-- PIGGY: Hunt Client [(download here)](https://mega.nz/folder/1qt02byb#ZxDqEQh3sZLvNCPRpeY4yw)
+- UwAmp Wamp Server [(Download)](https://www.uwamp.com/file/UwAmp.exe)
+- HxD [(Download)](https://mh-nexus.de/en/hxd/)
+- dnSpy [(Download)](https://dnspy.org/)
+- PIGGY: Hunt Client [(Download)](https://mega.nz/folder/1qt02byb#ZxDqEQh3sZLvNCPRpeY4yw)
 
 ---
 

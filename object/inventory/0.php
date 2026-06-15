@@ -3,92 +3,50 @@ http_response_code(200);
 header('Content-Type: application/json');
 
 $data = [
-  'currencies' => [
-    [
-      'id' => 'string',
-      'amount' => 0,
-      'properties' => [
+    'scope' => 'items,currencies',
+    'currencies' => [
         [
-          'name' => 'string',
-          'value' => 'string'
-        ]
-      ],
-      'proxy' => [
-        'service' => 'string',
-        'namespace' => 'string',
-        'settings' => [
-          'node' => 'string'
-        ]
-      ]
-    ]
-  ],
-  'items' => [
-    [
-      'id' => 'string',
-      'items' => [
+            'id' => 'currency.gems',
+            'amount' => 100,
+            'properties' => [
+                ['name' => 'color', 'value' => 'blue']
+            ]
+        ],
         [
-          'updatedAt' => 0,
-          'proxyId' => 'string',
-          'id' => 0,
-          'properties' => [
-            [
-              'name' => 'string',
-              'value' => 'string'
-            ]
-          ],
-          'proxy' => [
-            'service' => 'string',
-            'namespace' => 'string',
-            'settings' => [
-              'node' => 'string'
-            ]
-          ],
-          'createdAt' => 0
+            'id' => 'currency.gold',
+            'amount' => 500,
+            'properties' => []
         ]
-      ]
-    ]
-  ],
-  'scope' => 'string',
-  'itemFilters' => [
-    'contentTagFilter' => [
-      'allOf' => [
-        'string'
-      ],
-      'anyOf' => [
-        'string'
-      ],
-      'noneOf' => [
-        'string'
-      ]
     ],
-    'propertyFilters' => [
-      [
-        'key' => 'string',
-        'predicate' => [
-          'caseInsensitive' => true,
-          'as' => 'string',
-          'lower' => 'string',
-          'upper' => 'string',
-          'substr' => 'string',
-          'values' => [
-            'string'
-          ],
-          'kind' => 'string',
-          'includeUpper' => true,
-          'value' => 'string',
-          'includeLower' => true
+    'items' => [
+        [
+            'id' => 'items.sword_01',
+            'items' => [
+                [
+                    'id' => '1',
+                    'createdAt' => 1700000000000,
+                    'updatedAt' => 1700000000000,
+                    'properties' => [
+                        ['name' => 'damage', 'value' => '50'],
+                        ['name' => 'durability', 'value' => '100']
+                    ]
+                ]
+            ]
+        ],
+        [
+            'id' => 'items.shield_01',
+            'items' => [
+                [
+                    'id' => '2',
+                    'createdAt' => 1700000000000,
+                    'updatedAt' => 1700000000000,
+                    'properties' => [
+                        ['name' => 'defense', 'value' => '30']
+                    ]
+                ]
+            ]
         ]
-      ]
-    ],
-    'createdAt' => [
-      'from' => 0,
-      'to' => 0
-    ],
-    'updatedAt' => [
-      'from' => 0,
-      'to' => 0
     ]
-  ]
 ];
 
 echo json_encode($data);

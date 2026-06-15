@@ -5,8 +5,12 @@ header('Content-Type: application/json');
 $data = [
     'results' => [
         [
-            'id' => 71880669866436610,
-            'stats' => []
+            'id' => 0,
+            'stats' => [
+                ['k' => 'alias', 'v' => 'MiniToon'],
+                ['k' => 'level', 'v' => '42'],
+                ['k' => 'gamesPlayed', 'v' => '150']
+            ]
         ]
     ]
 ];

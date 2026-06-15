@@ -4,10 +4,10 @@ header('Content-Type: application/json');
 
 $data = [
   'id' => 71880669866436610,
+  'email' => 'greedycellhelp@gmail.com',
   'language' => 'en',
   'scopes' => [],
-  'thirdPartyAppAssociations' => [],
-  'deviceIds' => []
+  'thirdPartyAppAssociations' => []
 ];
 
 echo json_encode($data);

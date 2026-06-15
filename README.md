@@ -1,7 +1,7 @@
 # Piglet Hunt
-The first open source private server for the abandoned steam game 'PIGGY: Hunt'
+The first open-source private server for the abandoned Steam game PIGGY: Hunt
 
-### IMPORTANT NOTE: At the moment, the client will only reach 66/69% but I will soon fix the problem in the future. 
+### IMPORTANT NOTE: At the moment, the client will only reach 66% but I will soon fix the problem in the future. 
 
 ---
 
@@ -10,45 +10,49 @@ The first open source private server for the abandoned steam game 'PIGGY: Hunt'
 Make sure you have the following installed:
 
 - UwAmp Wamp Server [(download here)](https://www.uwamp.com/file/UwAmp.exe)
-- Fiddler Classic [(download here)](https://www.telerik.com/fiddler/fiddler-classic)
-- Piggy Hunt Client [(download here)](https://mega.nz/folder/1qt02byb#ZxDqEQh3sZLvNCPRpeY4yw)
+- HxD [(download here)](https://mh-nexus.de/en/hxd/)
+- dnSpy [(download here)](https://dnspy.org/)
+- PIGGY: Hunt Client [(download here)](https://mega.nz/folder/1qt02byb#ZxDqEQh3sZLvNCPRpeY4yw)
 
 ---
 
 ## UwAmp Setup
 
-1. Download and install UwAmp
-2. Launch UwAmp
-3. Start Apache
-4. Open: C:\UwAmp\www
-5. Place the repository files inside the www folder
-6. Make sure Apache is running on port 80 or 443
+1. Download and install **UwAmp**.
+
+2. Launch **UwAmp**.
+
+3. Start the **Apache** service.
+
+4. Navigate to:
+
+   ```
+   C:\UwAmp\www
+   ```
+
+5. Copy all files from this repository into the **www** folder.
+
+6. Ensure that Apache is running and accessible on port **80** (HTTP) or **443** (HTTPS).
+
+7. Verify your setup by opening your server URL in a web browser.
 
 ---
 
-## Fiddler Setup
+## Application Setup
 
-- Go to Tools > Options > HTTPS and enable "Capture HTTPS CONNECTs", "Decrypt HTTPS traffic" and then click Actions then click "Trust Root Certificate".
-- Go to AutoResponder and then enable "Enable rules" then add a new rule in the "Rule Editor".
-- In the rule editor, for "If request matches..." add ```REGEX:^https?://api\.beamable\.com/(.*)$``` and "then respond with..." add ```http://localhost/$1```
+* In your **PIGGY: Hunt** application folder, navigate to **piggy-hunt_Data** and open **resources.assets** in a hex editor (such as HxD). Replace **api.beamable.com** with your own URL. If your URL is shorter than the original, pad the remaining space with forward slashes (`/`).
 
----
+* Open the **Managed** folder located inside **piggy-hunt_Data** and open **PubNub.dll** in **dnSpy**. Press **Ctrl + Shift + K**, set the search type to **Strings**, and search for **pubsub.pubnub.com**. Double-click the result, then right-click the URL and select **Edit Class (C#)**. Replace it with your own URL, then click **Compile**. Finally, click **File** in the top-left corner and select **Save All** to save your changes.
 
-## Connecting     
-
-1. Download the client
-2. Launch the client
-3. The client should now connect through your local server
+* Finally, you can launch the exe and you should connect to our own PIGGY: Hunt server!
 
 ---
 
 ## Screenshots
 
 <details>
-  <summary>Click to view Screenshots</summary>
-  
-  ![Screenshot 1](/Images/image1.png)
-  ![Screenshot 2](/Images/image2.png)
+  <summary>Click to view screenshots</summary>
+  ![Screenshot1](/Screenshots/Screenshot1.png)
 </details>
 
 ---

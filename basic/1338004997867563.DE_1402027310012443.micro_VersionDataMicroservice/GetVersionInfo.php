@@ -3,9 +3,12 @@ http_response_code(200);
 header('Content-Type: application/json');
 
 $data = [
-    "ClientVersion" => "1.0.7",
-    "Platform" => "STEAM",
-    'Id' => ''
+    'StoreLink' => 'https://github.com/astralsc/PigletHunt',
+    'ForceUpdate' => false,
+    'Maintenance' => false,
+    'InvalidPlatform' => false,
+    'AgreementVersion' => '1.0.7',
+    'MaintenanceItems' => []
 ];
 
 echo json_encode($data);

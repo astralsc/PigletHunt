@@ -52,7 +52,9 @@ Make sure you have the following installed:
 
 <details>
   <summary>Click to view screenshots</summary>
-  ![Screenshot1](/Screenshots/Screenshot1.png)
+
+  <img src="Screenshots/Screenshot1.png" alt="Screenshot 1">
+
 </details>
 
 ---
